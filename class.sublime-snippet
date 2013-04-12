@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[${1:shared} class ${2:Name}(${3:parameters}) ${4:extends ${5:Parent}(${6:parameters})} ${7:satisfies ${8:Interface}(${9:parameters})}{
+	$0
+}]]></content>
+    <tabTrigger>cl</tabTrigger>
+    <scope>source.ceylon</scope>
+    <description>class</description>
+</snippet>

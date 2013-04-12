@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[assert ]]></content>
+    <tabTrigger>as</tabTrigger>
+    <scope>source.ceylon</scope>
+    <description>assert</description>
+</snippet>
