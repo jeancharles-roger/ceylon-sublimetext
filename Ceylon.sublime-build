@@ -1,0 +1,6 @@
+{
+	"target": "compile_ceylon",
+	"cmd": ["ceylon",  "compile", "--encoding=UTF-8", "${file}"],
+	"working_dir": "${project_path:${folder}}",
+	"selector": "source.ceylon"
+}
