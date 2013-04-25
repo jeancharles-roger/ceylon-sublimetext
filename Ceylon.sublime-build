@@ -1,6 +1,15 @@
 {
+	"name": "Ceylon to JVM",
 	"target": "compile_ceylon",
 	"cmd": ["ceylon",  "compile", "--encoding=UTF-8", "${file}"],
 	"working_dir": "${project_path:${folder}}",
-	"selector": "source.ceylon"
+	"selector": "source.ceylon",
+
+	"variants": [
+        { 
+	  	  "name": "Ceylon to JavaScript",
+	  	  "target": "compile_ceylon",
+          "cmd": ["ceylon",  "compile-js", "--encoding=UTF-8", "${file}"]
+        }
+    ]
 }
