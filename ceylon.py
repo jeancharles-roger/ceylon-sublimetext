@@ -6,7 +6,7 @@ import re
 class CompileCeylonCommand(sublime_plugin.WindowCommand):
    def run(self, cmd = [], file_regex = "", line_regex = "", working_dir = "",
             encoding = "utf-8", env = {}, quiet = False, kill = False,
-            # Catches "path" and "shell"
+            path = "", # Catches "path" and "shell"
             **kwargs):
 
       working_dir = os.path.abspath(working_dir)
@@ -55,7 +55,8 @@ class CompileCeylonCommand(sublime_plugin.WindowCommand):
       # Delegate compilation command to exec.
       self.window.run_command("exec", {
 				"cmd": cmd,
-				"working_dir": working_dir
+				"working_dir": working_dir,
+            "path": path
 			})
 
 

@@ -5,11 +5,19 @@
 	"working_dir": "${project_path:${folder}}",
 	"selector": "module.ceylon",
 
+  "windows": { "cmd": ["ceylon.exe"] },
+  "linux": { "path": ["/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"] },
+  "osx": { "path": ["/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"] },
+
 	"variants": [
         { 
 	  	  "name": "Ceylon to JavaScript",
 	  	  "target": "compile_ceylon",
-          "cmd": ["ceylon",  "compile-js", "--encoding=UTF-8", "${file}"]
+          "cmd": ["ceylon",  "compile-js", "--encoding=UTF-8", "${file}"],
+          
+          "windows": { "cmd": ["ceylon.exe"] },
+          "linux": { "path": ["/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"] },
+          "osx": { "path": ["/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"] }
         }
     ]
 }
