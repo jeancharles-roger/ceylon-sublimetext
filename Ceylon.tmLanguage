@@ -88,14 +88,14 @@
 		<!-- Keywords -->
 		<dict>
 			<key>match</key>
-			<string>\b(module|package|import|alias|class|interface|object|given|value|assign|void|function|of|extends|satisfies|adapts|abstracts|in|out|return|break|continue|throw|assert|dynamic|if|else|switch|case|for|while|try|catch|finally|then|this|outer|super|is|exists|nonempty)\b</string>	
+			<string>\b(assembly|module|package|import|alias|class|interface|object|given|value|assign|void|function|new|of|extends|satisfies|adapts|abstracts|in|out|return|break|continue|throw|assert|dynamic|if|else|switch|case|for|while|try|catch|finally|then|let|this|outer|super|is|exists|nonempty)\b</string>	
 			<key>name</key>
 			<string>keyword.control.ceylon</string>
 		</dict>
 
 		<dict>
 			<key>match</key>
-			<string>\b(doc|by|throws|shared|variable|deprecated|late|actual|formal|abstract)\b</string>	
+			<string>\b(doc|by|license|see|throws|tagged|shared|abstract|formal|default|actual|variable|late|native|deprecated|final|sealed|annotation|suppressWarnings)\b</string>	
 			<key>name</key>
 			<string>keyword.other.ceylon</string>
 		</dict>

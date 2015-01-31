@@ -56,7 +56,7 @@
 
 		<dict>
 			<key>match</key>
-			<string>\b(doc|by|deprecated|shared)\b</string>	
+			<string>\b(doc|by|license|see|throws|tagged|deprecated|shared|optional|suppressWarnings)\b</string>	
 			<key>name</key>
 			<string>keyword.other.ceylon</string>
 		</dict>
