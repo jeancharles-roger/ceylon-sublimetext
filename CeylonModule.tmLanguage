@@ -99,16 +99,15 @@
 		<!-- Literals -->
 		<dict>
 			<key>begin</key>
-			<string>'</string>
+			<string>("""|"|')</string>
 			
 			<key>end</key>
-			<string>'</string>
+			<string>\1</string>
 
 			<key>name</key>
 			<string>string.ceylon</string>
 	
 		</dict>
-
 
 	</array>
 	<key>scopeName</key>
