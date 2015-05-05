@@ -45,46 +45,6 @@
 			<string>comment.shebang.ceylon</string>
 		</dict>
 
-		<!-- Structure -->
-		<dict>
-			<key>begin</key>
-			<string>^\s*(import)\s*([^\s{]+)(\s*)(\{)</string>
-			
-			<key>end</key>
-			<string>(\})</string>
-
-			<key>beginCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>keyword.control.ceylon</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>variable.parameter.package.ceylon</string>
-				</dict>
-				<key>4</key>
-				<dict>
-					<key>name</key>
-					<string>pontuation.import.ceylon</string>
-				</dict>
-			</dict>
-			
-			<key>endCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>pontuation.import.ceylon</string>
-				</dict>
-			</dict>
-		
-			<key>contentName</key>
-			<string>constant.import.ceylon</string>	
-		</dict>
-
 		<!-- Keywords -->
 		<dict>
 			<key>match</key>
